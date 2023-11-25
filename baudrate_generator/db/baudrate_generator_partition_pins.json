@@ -48,11 +48,27 @@
 					"strict" : false
 				},
 				{
+					"name" : "baud_value[11]",
+					"strict" : false
+				},
+				{
 					"name" : "baud_value[10]",
 					"strict" : false
 				},
 				{
-					"name" : "baud_value[11]",
+					"name" : "baud_value[12]",
+					"strict" : false
+				},
+				{
+					"name" : "baud_value[13]",
+					"strict" : false
+				},
+				{
+					"name" : "baud_value[14]",
+					"strict" : false
+				},
+				{
+					"name" : "baud_value[15]",
 					"strict" : false
 				},
 				{

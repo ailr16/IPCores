@@ -92,8 +92,8 @@ TDO                          : 20        : output :                   :         
 nCE                          : 21        :        :                   :         : 1         :                
 GND                          : 22        : gnd    :                   :         :           :                
 clk                          : 23        : input  : 2.5 V             :         : 1         : N              
-GND+                         : 24        :        :                   :         : 2         :                
-GND+                         : 25        :        :                   :         : 2         :                
+baud_value[10]               : 24        : input  : 2.5 V             :         : 2         : N              
+baud_value[12]               : 25        : input  : 2.5 V             :         : 2         : N              
 VCCIO2                       : 26        : power  :                   : 2.5V    : 2         :                
 GND                          : 27        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 28        :        :                   :         : 2         :                
@@ -114,36 +114,36 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : 42        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : 43        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 44        :        :                   :         : 3         :                
 VCCINT                       : 45        : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 46        :        :                   :         : 3         :                
+baud_value[14]               : 46        : input  : 2.5 V             :         : 3         : N              
 VCCIO3                       : 47        : power  :                   : 2.5V    : 3         :                
 GND                          : 48        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 49        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 50        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 51        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 52        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 53        :        :                   :         : 3         :                
-baud_value[3]                : 54        : input  : 2.5 V             :         : 4         : N              
+baud_value[4]                : 49        : input  : 2.5 V             :         : 3         : N              
+reset                        : 50        : input  : 2.5 V             :         : 3         : N              
+baud_value[13]               : 51        : input  : 2.5 V             :         : 3         : N              
+clk_out                      : 52        : output : 2.5 V             :         : 3         : N              
+baud_value[3]                : 53        : input  : 2.5 V             :         : 3         : N              
+baud_value[0]                : 54        : input  : 2.5 V             :         : 4         : N              
 baud_value[2]                : 55        : input  : 2.5 V             :         : 4         : N              
 VCCIO4                       : 56        : power  :                   : 2.5V    : 4         :                
 GND                          : 57        : gnd    :                   :         :           :                
-baud_value[10]               : 58        : input  : 2.5 V             :         : 4         : N              
-baud_value[0]                : 59        : input  : 2.5 V             :         : 4         : N              
-baud_value[11]               : 60        : input  : 2.5 V             :         : 4         : N              
+baud_value[5]                : 58        : input  : 2.5 V             :         : 4         : N              
+baud_value[15]               : 59        : input  : 2.5 V             :         : 4         : N              
+baud_value[8]                : 60        : input  : 2.5 V             :         : 4         : N              
 VCCINT                       : 61        : power  :                   : 1.2V    :           :                
 VCCIO4                       : 62        : power  :                   : 2.5V    : 4         :                
 GND                          : 63        : gnd    :                   :         :           :                
-baud_value[6]                : 64        : input  : 2.5 V             :         : 4         : N              
-baud_value[7]                : 65        : input  : 2.5 V             :         : 4         : N              
-baud_value[5]                : 66        : input  : 2.5 V             :         : 4         : N              
-clk_out                      : 67        : output : 2.5 V             :         : 4         : N              
-baud_value[4]                : 68        : input  : 2.5 V             :         : 4         : N              
-baud_value[8]                : 69        : input  : 2.5 V             :         : 4         : N              
-reset                        : 70        : input  : 2.5 V             :         : 4         : N              
+baud_value[9]                : 64        : input  : 2.5 V             :         : 4         : N              
+baud_value[1]                : 65        : input  : 2.5 V             :         : 4         : N              
+baud_value[6]                : 66        : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 67        :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 68        :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 69        :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 70        :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 71        :        :                   :         : 4         :                
-baud_value[9]                : 72        : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 72        :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 73        :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 74        :        :                   :         : 5         :                
-baud_value[1]                : 75        : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 75        :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 76        :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 77        :        :                   :         : 5         :                
 VCCINT                       : 78        : power  :                   : 1.2V    :           :                
@@ -189,11 +189,11 @@ VCCIO7                       : 117       : power  :                   : 2.5V    
 GND                          : 118       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 119       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 120       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 121       :        :                   :         : 7         :                
+baud_value[7]                : 121       : input  : 2.5 V             :         : 7         : N              
 VCCIO7                       : 122       : power  :                   : 2.5V    : 7         :                
 GND                          : 123       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 124       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 125       :        :                   :         : 7         :                
+baud_value[11]               : 125       : input  : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 126       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 127       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 128       :        :                   :         : 8         :                

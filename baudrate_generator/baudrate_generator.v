@@ -7,11 +7,11 @@
 module baudrate_generator(
 	input 		      reset,
 	input 		      clk,
-	input      [11:0] baud_value,
+	input      [15:0] baud_value,
 	output            clk_out
 	);
 	
-	reg [11:0] 	counter;
+	reg [15:0] 	counter;
 	
 	initial begin
 		counter = 0;
@@ -19,13 +19,13 @@ module baudrate_generator(
 	
 	always @( posedge clk ) begin
 		if (!reset) begin
-			counter = 12'd0;
+			counter <= 16'd0;
 		end
 		else if (clk_out) begin
-			counter = 12'd0;
+			counter <= 16'd0;
 		end
 		else begin
-			counter = counter + 12'd1;
+			counter <= counter + 16'd1;
 		end
 	end
 	

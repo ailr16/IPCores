@@ -10,14 +10,14 @@ z2
 cModel Technology
 Z0 d/home/ailr16/Documents/GitHub/IPCores/baudrate_generator/simulation/modelsim
 vbaudrate_generator
-Z1 !s110 1700897582
+Z1 !s110 1700944755
 !i10b 1
-!s100 A;JF^zJDb0=5dcl<gK1K?1
+!s100 >cOLPSND2kk2?iLiJRYYk0
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I5=oL2GO0TX]:NBBji9LLY2
+IbjNJ]CS<i6lD=^1;7=a1H0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1700897395
+w1700944687
 8/home/ailr16/Documents/GitHub/IPCores/baudrate_generator/baudrate_generator.v
 F/home/ailr16/Documents/GitHub/IPCores/baudrate_generator/baudrate_generator.v
 !i122 0
@@ -26,7 +26,7 @@ Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1700897582.000000
+Z5 !s108 1700944755.000000
 !s107 /home/ailr16/Documents/GitHub/IPCores/baudrate_generator/baudrate_generator.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/ailr16/Documents/GitHub/IPCores/baudrate_generator|/home/ailr16/Documents/GitHub/IPCores/baudrate_generator/baudrate_generator.v|
 !i113 1
@@ -36,12 +36,12 @@ Z8 tCvgOpt 0
 vbaudrate_generator_tb
 R1
 !i10b 1
-!s100 QIXVcP8?[8`iW:H`kfTnb3
+!s100 0Dd<77_:UFCfnflZDYV1U0
 R2
-IK=<e]n5adb<5o9:3A;Wfl0
+I]aI<0iJCFoKW[Boh<7chQ2
 R3
 R0
-w1700897567
+w1700944740
 8/home/ailr16/Documents/GitHub/IPCores/baudrate_generator/baudrate_generator_tb.v
 F/home/ailr16/Documents/GitHub/IPCores/baudrate_generator/baudrate_generator_tb.v
 !i122 1
