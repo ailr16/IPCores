@@ -1,0 +1,3 @@
+module baudrate_generator(input x, output z);
+	assign z = x;
+endmodule 

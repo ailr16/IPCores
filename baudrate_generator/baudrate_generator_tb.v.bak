@@ -1,0 +1,9 @@
+module baudrate_generator_tb();
+	reg x;
+	wire z;
+	
+	baudrate_generator DUT( x, z );
+	
+	initial 
+	
+endmodule

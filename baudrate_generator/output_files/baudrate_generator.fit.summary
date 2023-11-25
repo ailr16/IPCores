@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Nov 25 01:32:54 2023
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : baudrate_generator
+Top-level Entity Name : baudrate_generator
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 21 / 6,272 ( < 1 % )
+    Total combinational functions : 21 / 6,272 ( < 1 % )
+    Dedicated logic registers : 12 / 6,272 ( < 1 % )
+Total registers : 12
+Total pins : 15 / 92 ( 16 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
