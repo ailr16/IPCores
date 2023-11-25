@@ -1,5 +1,74 @@
 |rs232
-x => y.DATAIN
-y <= x.DB_MAX_OUTPUT_PORT_TYPE
+reset => reset.IN1
+clk => clk.IN1
+sel[0] => Decoder0.IN1
+sel[0] => Decoder1.IN1
+sel[0] => Decoder2.IN1
+sel[0] => Decoder3.IN1
+sel[0] => Decoder4.IN1
+sel[0] => value[6].IN1
+sel[0] => value[1].IN1
+sel[1] => Decoder0.IN0
+sel[1] => Decoder1.IN0
+sel[1] => Decoder2.IN0
+sel[1] => Decoder3.IN0
+sel[1] => Decoder4.IN0
+sel[1] => value[10].IN1
+sel[1] => value[5].IN1
+sel[1] => value[2].IN1
+clk_out << baudrate_generator:bg.clk_out
+reset_led << reset.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|rs232|baudrate_generator:bg
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+baud_value[0] => Equal0.IN15
+baud_value[1] => Equal0.IN14
+baud_value[2] => Equal0.IN13
+baud_value[3] => Equal0.IN12
+baud_value[4] => Equal0.IN11
+baud_value[5] => Equal0.IN10
+baud_value[6] => Equal0.IN9
+baud_value[7] => Equal0.IN8
+baud_value[8] => Equal0.IN7
+baud_value[9] => Equal0.IN6
+baud_value[10] => Equal0.IN5
+baud_value[11] => Equal0.IN4
+baud_value[12] => Equal0.IN3
+baud_value[13] => Equal0.IN2
+baud_value[14] => Equal0.IN1
+baud_value[15] => Equal0.IN0
+clk_out <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 

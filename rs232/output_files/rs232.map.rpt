@@ -1,5 +1,5 @@
 Analysis & Synthesis report for rs232
-Fri Nov 24 23:00:22 2023
+Sat Nov 25 14:30:36 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -14,9 +14,11 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "baudrate_generator:bg"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +45,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 24 23:00:22 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov 25 14:30:36 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; rs232                                       ;
 ; Top-level Entity Name              ; rs232                                       ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 2                                           ;
+; Total logic elements               ; 25                                          ;
+;     Total combinational functions  ; 25                                          ;
+;     Dedicated logic registers      ; 16                                          ;
+; Total registers                    ; 16                                          ;
+; Total pins                         ; 6                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -155,60 +157,64 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                      ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                        ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
-; rs232.v                          ; yes             ; User Verilog HDL File  ; /home/ailr16/Documents/GitHub/IPCores/rs232/rs232.v ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                   ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                     ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
+; baudrate_generator.v             ; yes             ; User Verilog HDL File  ; /home/ailr16/Documents/GitHub/IPCores/rs232/baudrate_generator.v ;         ;
+; rs232.v                          ; yes             ; User Verilog HDL File  ; /home/ailr16/Documents/GitHub/IPCores/rs232/rs232.v              ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-;                                             ;          ;
-; Total combinational functions               ; 0        ;
-; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 0        ;
-;     -- 3 input functions                    ; 0        ;
-;     -- <=2 input functions                  ; 0        ;
-;                                             ;          ;
-; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 0        ;
-;     -- arithmetic mode                      ; 0        ;
-;                                             ;          ;
-; Total registers                             ; 0        ;
-;     -- Dedicated logic registers            ; 0        ;
-;     -- I/O registers                        ; 0        ;
-;                                             ;          ;
-; I/O pins                                    ; 2        ;
-;                                             ;          ;
-; Embedded Multiplier 9-bit elements          ; 0        ;
-;                                             ;          ;
-; Maximum fan-out node                        ; y~output ;
-; Maximum fan-out                             ; 1        ;
-; Total fan-out                               ; 3        ;
-; Average fan-out                             ; 0.75     ;
-+---------------------------------------------+----------+
++------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                        ;
++---------------------------------------------+--------------------------------------+
+; Resource                                    ; Usage                                ;
++---------------------------------------------+--------------------------------------+
+; Estimated Total logic elements              ; 25                                   ;
+;                                             ;                                      ;
+; Total combinational functions               ; 25                                   ;
+; Logic element usage by number of LUT inputs ;                                      ;
+;     -- 4 input functions                    ; 8                                    ;
+;     -- 3 input functions                    ; 1                                    ;
+;     -- <=2 input functions                  ; 16                                   ;
+;                                             ;                                      ;
+; Logic elements by mode                      ;                                      ;
+;     -- normal mode                          ; 10                                   ;
+;     -- arithmetic mode                      ; 15                                   ;
+;                                             ;                                      ;
+; Total registers                             ; 16                                   ;
+;     -- Dedicated logic registers            ; 16                                   ;
+;     -- I/O registers                        ; 0                                    ;
+;                                             ;                                      ;
+; I/O pins                                    ; 6                                    ;
+;                                             ;                                      ;
+; Embedded Multiplier 9-bit elements          ; 0                                    ;
+;                                             ;                                      ;
+; Maximum fan-out node                        ; baudrate_generator:bg|counter[15]~26 ;
+; Maximum fan-out                             ; 16                                   ;
+; Total fan-out                               ; 122                                  ;
+; Average fan-out                             ; 2.30                                 ;
++---------------------------------------------+--------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |rs232                     ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |rs232              ; rs232       ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name          ; Entity Name        ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------------+--------------+
+; |rs232                     ; 25 (0)              ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 6    ; 0            ; |rs232                       ; rs232              ; work         ;
+;    |baudrate_generator:bg| ; 25 (25)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |rs232|baudrate_generator:bg ; baudrate_generator ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -217,8 +223,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 16    ;
+; Number of registers using Synchronous Clear  ; 16    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -227,16 +233,46 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |rs232|baudrate_generator:bg|counter[15] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+
+
++------------------------------------------------------+
+; Port Connectivity Checks: "baudrate_generator:bg"    ;
++--------------------+-------+----------+--------------+
+; Port               ; Type  ; Severity ; Details      ;
++--------------------+-------+----------+--------------+
+; baud_value[15..13] ; Input ; Info     ; Stuck at GND ;
+; baud_value[11]     ; Input ; Info     ; Stuck at GND ;
+; baud_value[3]      ; Input ; Info     ; Stuck at GND ;
+; baud_value[0]      ; Input ; Info     ; Stuck at VCC ;
++--------------------+-------+----------+--------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 2                               ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 6                           ;
+; cycloneiii_ff         ; 16                          ;
+;     SCLR              ; 16                          ;
+; cycloneiii_lcell_comb ; 25                          ;
+;     arith             ; 15                          ;
+;         2 data inputs ; 15                          ;
+;     normal            ; 10                          ;
+;         1 data inputs ; 1                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 8                           ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.32                        ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -254,21 +290,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Nov 24 23:00:18 2023
+    Info: Processing started: Sat Nov 25 14:30:32 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off rs232 -c rs232
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file baudrate_generator.v
+    Info (12023): Found entity 1: baudrate_generator File: /home/ailr16/Documents/GitHub/IPCores/rs232/baudrate_generator.v Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file rs232.v
     Info (12023): Found entity 1: rs232 File: /home/ailr16/Documents/GitHub/IPCores/rs232/rs232.v Line: 1
 Info (12127): Elaborating entity "rs232" for the top level hierarchy
+Info (12128): Elaborating entity "baudrate_generator" for hierarchy "baudrate_generator:bg" File: /home/ailr16/Documents/GitHub/IPCores/rs232/rs232.v Line: 24
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 1 output pins
+Info (21057): Implemented 31 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 2 output pins
+    Info (21061): Implemented 25 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 358 megabytes
-    Info: Processing ended: Fri Nov 24 23:00:22 2023
+    Info: Peak virtual memory: 479 megabytes
+    Info: Processing ended: Sat Nov 25 14:30:36 2023
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:10
 
