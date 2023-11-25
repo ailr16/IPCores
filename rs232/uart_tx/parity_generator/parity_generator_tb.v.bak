@@ -1,0 +1,3 @@
+module parity_generator_tb();
+	
+endmodule 
