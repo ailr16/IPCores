@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at piso.v(10): always construct contains both blocking and non-blocking assignments File: /home/ailr16/Documents/GitHub/IPCores/rs232/uart_tx/piso/piso.v Line: 10

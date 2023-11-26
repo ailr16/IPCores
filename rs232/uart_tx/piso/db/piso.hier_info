@@ -1,0 +1,25 @@
+|piso
+clk => serial_data~reg0.CLK
+clk => end_of_data~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+enable => serial_data~reg0.ENA
+enable => end_of_data~reg0.ENA
+enable => counter[0].ENA
+enable => counter[1].ENA
+enable => counter[2].ENA
+enable => counter[3].ENA
+parallel_data[0] => Mux0.IN7
+parallel_data[1] => Mux0.IN6
+parallel_data[2] => Mux0.IN5
+parallel_data[3] => Mux0.IN4
+parallel_data[4] => Mux0.IN3
+parallel_data[5] => Mux0.IN2
+parallel_data[6] => Mux0.IN1
+parallel_data[7] => Mux0.IN0
+serial_data << serial_data~reg0.DB_MAX_OUTPUT_PORT_TYPE
+end_of_data << end_of_data~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

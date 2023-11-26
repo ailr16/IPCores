@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Nov 25 18:35:51 2023
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : piso
+Top-level Entity Name : piso
+Family : Cyclone IV E
+Total logic elements : 10
+    Total combinational functions : 10
+    Dedicated logic registers : 5
+Total registers : 5
+Total pins : 12
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

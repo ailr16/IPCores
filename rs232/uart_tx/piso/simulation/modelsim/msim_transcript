@@ -1,0 +1,53 @@
+# do piso_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/ailr16/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/ailr16/Documents/GitHub/IPCores/rs232/uart_tx/piso {/home/ailr16/Documents/GitHub/IPCores/rs232/uart_tx/piso/piso.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:36:02 on Nov 25,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/ailr16/Documents/GitHub/IPCores/rs232/uart_tx/piso" /home/ailr16/Documents/GitHub/IPCores/rs232/uart_tx/piso/piso.v 
+# -- Compiling module piso
+# 
+# Top level modules:
+# 	piso
+# End time: 18:36:02 on Nov 25,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+/home/ailr16/Documents/GitHub/IPCores/rs232/uart_tx/piso {/home/ailr16/Documents/GitHub/IPCores/rs232/uart_tx/piso/piso_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:36:02 on Nov 25,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/ailr16/Documents/GitHub/IPCores/rs232/uart_tx/piso" /home/ailr16/Documents/GitHub/IPCores/rs232/uart_tx/piso/piso_tb.v 
+# -- Compiling module piso_tb
+# 
+# Top level modules:
+# 	piso_tb
+# End time: 18:36:02 on Nov 25,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  piso_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" piso_tb 
+# Start time: 18:36:02 on Nov 25,2023
+# Loading work.piso_tb
+# Loading work.piso
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $finish    : /home/ailr16/Documents/GitHub/IPCores/rs232/uart_tx/piso/piso_tb.v(26)
+#    Time: 240 ns  Iteration: 0  Instance: /piso_tb
+# 1
+# Break in Module piso_tb at /home/ailr16/Documents/GitHub/IPCores/rs232/uart_tx/piso/piso_tb.v line 26
+# 
+# stdin: <EOF>
+# End time: 18:36:42 on Nov 25,2023, Elapsed time: 0:00:40
+# Errors: 0, Warnings: 0
