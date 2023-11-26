@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "data_out",
+					"strict" : false
+				},
+				{
+					"name" : "parity_bit",
+					"strict" : false
+				},
+				{
+					"name" : "selection[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_bit",
+					"strict" : false
+				},
+				{
+					"name" : "selection[0]",
+					"strict" : false
+				},
+				{
+					"name" : "start_bit",
+					"strict" : false
+				},
+				{
+					"name" : "stop_bit",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

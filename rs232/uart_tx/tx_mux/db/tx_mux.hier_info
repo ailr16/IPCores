@@ -1,0 +1,11 @@
+|tx_mux
+selection[0] => data_out.OUTPUTSELECT
+selection[0] => data_out.OUTPUTSELECT
+selection[1] => data_out.OUTPUTSELECT
+start_bit => data_out.DATAA
+data_bit => data_out.DATAB
+parity_bit => data_out.DATAA
+stop_bit => data_out.DATAB
+data_out << data_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
